@@ -9,6 +9,7 @@ fun check(s:String): String {
     val per = "(){}[]"
     for (i in s.indices) {
         val index = per.indexOf(s[i])
+        //p
         if (index >= 0) {
             if (index % 2 == 1) { // Если закрывающая скобка
                 if (st.size == 0) return "NO" // Если стек пустой, значит расстановка неправильная
